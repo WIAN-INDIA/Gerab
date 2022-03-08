@@ -1,0 +1,45 @@
+Installation
+	Tesseract
+		tesseract 5.0.1
+	
+	Python
+		python 3.8.3
+	
+	Python Libraries
+		pandas
+		pdf2image
+		cv2
+		numpy
+		pytesseract
+		mysql.connector
+		
+	XAMPP (Apache, MySQL, PHP)
+		https://www.apachefriends.org/index.html 
+		
+
+MySQL Configuration
+	Setup
+		DBUSER - <dbuser>
+		DBPASS - <dbpass>
+	Create Database
+		DBNAME - <dbname>
+	Create Tables
+		Import gerab.sql in MySQL under <dbname> database
+
+
+Application Setup
+	Code Base
+		Linux
+			Unzip files in /var/www/html folder
+			Replace MySQL configuration values <dbuser>, <dbpass> and <dbname> in following files
+				conn.php
+				backend/db_con.py
+		Windows
+			Go to XAMPP installation directory
+			Unzip files in php/www folder
+			Comment line 15 & 16 by adding // from start of line in upload.php file
+			Uncomment line 20 & 21 by removing // from start of line in upload.php file
+			Replace MySQL configuration values <dbuser>, <dbpass> and <dbname> in following files
+				conn.php
+				backend/db_con.py
+			
